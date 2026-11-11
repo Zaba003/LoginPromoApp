@@ -1,0 +1,23 @@
+{
+  "name": "reporting-platform",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace @reporting/api run dev",
+    "typecheck": "npm --workspace @reporting/api run typecheck",
+    "check:examples": "node ./scripts/check-examples.mjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "tsx": "^4.20.0",
+    "@types/node": "^22.15.0"
+  }
+}

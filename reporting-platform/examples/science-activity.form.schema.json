@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Демонстрационная форма сведений о научной деятельности",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "period",
+    "publications",
+    "researchProjects"
+  ],
+  "properties": {
+    "period": {
+      "type": "string",
+      "pattern": "^\\d{4}$",
+      "description": "Отчётный год"
+    },
+    "publications": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Количество публикаций"
+    },
+    "researchProjects": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Количество НИР"
+    },
+    "comment": {
+      "type": "string",
+      "maxLength": 2000
+    }
+  }
+}

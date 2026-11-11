@@ -1,0 +1,28 @@
+{
+  "id": "demo.science-annual.v1",
+  "version": 1,
+  "notes": "ДЕМОНСТРАЦИЯ: правила без выполнения произвольного кода. Не является госформой.",
+  "sourceSelection": {
+    "requireStatus": "approved",
+    "periodMatch": "exact",
+    "scope": "campaign.units"
+  },
+  "metrics": [
+    {
+      "output": "total_publications",
+      "indicator": "science.publications.count",
+      "operation": "sum",
+      "sourcePointer": "/publications",
+      "unit": "count"
+    },
+    {
+      "output": "total_research_projects",
+      "indicator": "science.projects.count",
+      "operation": "sum",
+      "sourcePointer": "/researchProjects",
+      "unit": "count"
+    }
+  ],
+  "missingValuePolicy": "error",
+  "versionPolicy": "snapshot"
+}

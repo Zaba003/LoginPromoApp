@@ -1,0 +1,21 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/period"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/publications"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/researchProjects"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/comment"
+    }
+  ]
+}
